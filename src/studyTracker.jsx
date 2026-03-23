@@ -452,7 +452,7 @@ export default function SBIPOTracker() {
         <div style={{ display:"flex",alignItems:"center",gap:12 }}>
           <div style={{ width:38,height:38,borderRadius:12,background:"linear-gradient(135deg,#f97316,#ec4899)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:18 }}>🏦</div>
           <div>
-            <div style={{ fontWeight:800,fontSize:17,color:"#fff",letterSpacing:"-0.5px" }}>SBI PO Study Codex</div>
+            <div style={{ fontWeight:800,fontSize:17,color:"#fff",letterSpacing:"-0.5px" }}>Study Tracker For LilaWati Kumari</div>
             <div style={{ fontSize:11,color:"#484f58" }}>{new Date().toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long"})}</div>
           </div>
         </div>
