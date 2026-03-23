@@ -107,7 +107,7 @@ function LoginScreen() {
       </div>
       <div style={{ background:"linear-gradient(145deg,#0f172a,#161b22)", border:"1px solid #21262d", borderRadius:24, padding:"52px 44px", width:"100%", maxWidth:420, textAlign:"center", boxShadow:"0 25px 60px rgba(0,0,0,0.5)", position:"relative", zIndex:1 }}>
         <div style={{ fontSize:52, marginBottom:12 }}>🏦</div>
-        <h1 style={{ fontSize:30, fontWeight:800, color:"#fff", margin:"0 0 6px", letterSpacing:"-1px" }}>SBI PO Study Codex</h1>
+        <h1 style={{ fontSize:30, fontWeight:800, color:"#fff", margin:"0 0 6px", letterSpacing:"-1px" }}>Study Tracker</h1>
         <p style={{ fontSize:14, color:"#484f58", margin:"0 0 40px" }}>Your personal exam preparation tracker.</p>
         <button onClick={handleGoogle} disabled={loading} style={{ width:"100%", padding:"14px 20px", background:loading?"#1e293b":"#fff", border:"none", borderRadius:12, cursor:loading?"not-allowed":"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:12, fontSize:15, fontWeight:700, color:"#1a1a1a", transition:"all 0.2s", boxShadow:"0 4px 14px rgba(0,0,0,0.3)", fontFamily:"'Cambria','Georgia',serif" }}>
           {loading ? <span style={{color:"#64748b"}}>Connecting...</span> : (
