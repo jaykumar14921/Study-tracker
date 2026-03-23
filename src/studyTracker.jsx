@@ -7,7 +7,7 @@ const SUPABASE_URL = "https://qstuzhetbvtfvurepsaq.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzdHV6aGV0YnZ0ZnZ1cmVwc2FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjY1NTIsImV4cCI6MjA4OTg0MjU1Mn0.3neppPLJ9c6_49hWmu1BErmi1ZVCF6xN8Urdne5zXzE";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-const RENDER_URL = "https://study-tracker-mt4a.onrender.com";
+const RENDER_URL = "https://studytracker-neon.vercel.app";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const SUBJECT_COLORS = ["#f97316","#22d3ee","#a78bfa","#34d399","#f472b6","#fbbf24","#60a5fa","#e879f9"];
