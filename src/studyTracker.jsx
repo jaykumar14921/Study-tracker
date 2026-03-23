@@ -337,7 +337,6 @@ export default function SBIPOTracker() {
   const weekTotal = weekDates.reduce((s,d)=>s+getTotalHours(d),0);
   const allTimeMins = getTotalAllTimeMins();
   const upcomingExams = exams.filter(e=>getDaysLeft(e.date)>=0).sort((a,b)=>new Date(a.date)-new Date(b.date));
-  const pendingTasks = tasks.filter(t=>!t.done&&t.date>=today).length;
   const monthDays = getMonthDays(selectedMonth);
   const getTopicColor = (idx) => TOPIC_COLORS[idx%Object.keys(TOPIC_COLORS).length];
 
