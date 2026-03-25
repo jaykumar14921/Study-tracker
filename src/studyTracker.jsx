@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { createClient } from "@supabase/supabase-js";
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 const SUPABASE_URL = "https://qstuzhetbvtfvurepsaq.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzdHV6aGV0YnZ0ZnZ1cmVwc2FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNjY1NTIsImV4cCI6MjA4OTg0MjU1Mn0.3neppPLJ9c6_49hWmu1BErmi1ZVCF6xN8Urdne5zXzE";
@@ -26,13 +25,13 @@ const C = {
 };
 
 // New weights: Quants P=10% M=10%, Reasoning P=10% M=10%, English P=10% M=10%, GA=20%, Speed=20%
-const WEIGHT = {
-  quants_prelims:10, quants_mains:10,
-  reasoning_prelims:10, reasoning_mains:10,
-  english_prelims:10, english_mains:10,
-  ga_done:20,
-  speed_done:20,
-};
+// const WEIGHT = {
+//   quants_prelims:10, quants_mains:10,
+//   reasoning_prelims:10, reasoning_mains:10,
+//   english_prelims:10, english_mains:10,
+//   ga_done:20,
+//   speed_done:20,
+// };
 
 const SUBJECTS = [
   { id:"quants",    label:"Quantitative Aptitude", short:"Quants",    icon:"📐", color:"#f97316", isGA:false, isSpeed:false },
@@ -431,7 +430,7 @@ function DailyView({today,checks,toggleCheck,getCheck,subjectPct,todayPct,upcomi
           <div style={{fontWeight:700,fontSize:14,color:"#fff",marginBottom:12}}>📅 Upcoming Exams</div>
           {upcomingExams.length===0&&<div style={{textAlign:"center",color:C.dim,fontSize:12,padding:"12px 0"}}>No upcoming exams · add in Exams tab</div>}
           {upcomingExams.slice(0,4).map(exam=>{
-            const sub=SUBJECTS.find(s=>s.id===exam.subject);
+            // const sub=SUBJECTS.find(s=>s.id===exam.subject);
             const dl=daysLeft(exam.date);
             const tColor=exam.type==="prelims"?C.prelims:C.mains;
             return(
